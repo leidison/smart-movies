@@ -7,9 +7,11 @@ module.exports = {
   extends: ['plugin:react/recommended', 'standard-with-typescript'],
   overrides: [
     {
-      // disable the rule specifically for React files
+      // apply rules specifically for React files
       files: ['*.tsx'],
       rules: {
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off'
       }
     }

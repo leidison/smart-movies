@@ -25,7 +25,7 @@ function NavigationSider ({ items, header, theme = 'light' }: Props) {
       <Menu
         theme={theme}
         mode="inline"
-        defaultSelectedKeys={['4']}
+        defaultSelectedKeys={['1']}
         items={items.map(
           ({ label, icon }, index) => ({
             key: String(index + 1),
